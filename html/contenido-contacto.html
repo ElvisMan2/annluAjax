@@ -1,0 +1,41 @@
+<div id="contenido" class="container d-flex justify-content-evenly flex-wrap mt-4">
+    <div class="col-lg-6 col-md-12 mb-3 p-3">
+     <h2 mb-2>Escríbenos</h2>
+     <p mb-2>Tu opinión es valiosa para nosotros, ya sea la de los profesionales de la salud, clientes y proveedores. Por eso, agradecemos tu interés y solicitamos nos comuniques cualquier comentario.</p>
+     <form id="contact-form" action="https://formspree.io/f/xeqyeelv" method="POST">
+       <label class="form-label" for="nombre-apellido">Nombres y Apellidos:</label>
+       <input class="mb-2 form-control" type="text" id="nombre-apellido" name="nombre-apellido" required>
+   
+       <label class="form-label" for="correo">Correo Electrónico:</label>
+       <input class="mb-2 form-control" type="email" id="correo" name="correo" required>
+   
+       <label class="form-label" for="telefono">Teléfono:</label>
+       <input class="mb-2 form-control" type="text" id="telefono" name="telefono" maxlength="9" pattern="\d{9}" required>
+   
+       <label class="form-label" for="tipo-consulta">Tipo de Consulta:</label>
+       <select class="mb-2 form-select" id="tipo-consulta" name="tipo-consulta" required>
+           <option value="" selected disabled>Seleccione una opción</option>
+           <option value="cotizacion">Cotización</option>
+           <option value="queja">Queja</option>
+           <option value="reclamo">Reclamo</option>
+           <option value="otro">Otro</option>
+       </select>
+   
+       <label class="form-label" for="mensaje">Mensaje:</label>
+       <textarea class="mb-2 form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+   
+       <button class="mb-2 btn btn-primary" type="submit" onclick="validarFormulario()">Enviar</button>
+   
+       <p id="error-message"></p>
+   </form>
+   </div>
+    <div class="col-lg-6 col-md-12 p-3">
+     <h2 class="mb-3">Ubícanos</h2>
+     <div>
+       <iframe id="mapa" class="mb-3" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d487.7740650018359!2d-77.05863429940577!3d-12.03026330873447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1705686548926!5m2!1ses-419!2spe"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     
+     </div>
+     <p><i class="bi bi-geo-alt-fill"></i>Jr. Mateo Aguilar 220. Int. 401-A Urb. Ingeniería – SMP</p>
+   </div>
+ 
+ </div>
