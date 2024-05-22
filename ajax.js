@@ -21,6 +21,7 @@ window.addEventListener('load', () => {
     htmlAjax('carousel.html','carousel');
     htmlAjax('footer.html','footer');
     htmlAjax('contenido.html','contenido');
+    htmlAjax('whatsapp.html','whatsapp');
 });
 
 
