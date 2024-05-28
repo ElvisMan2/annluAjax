@@ -35,13 +35,16 @@ body {
 
   }
 
-  #error-message {
-    color: red;
-  }
 
 
 
- 
+  .card{
+    height: 300px;
+}
 
-   /* Mapa*/
+.card img{
+    max-height: 230px;
+    max-width: 230px;
+}
 
+  
